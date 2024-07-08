@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6df211d6-286a-4c24-959d-e1695cb7075d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rkvApp/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/static/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rkvApp/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rkvApp/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rkvApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rkvProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/rkvProject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rkvProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rkvProject/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,20 +32,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Django Server.rkvProject.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR_AND_PREVIEW&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\shaej\PycharmProjects\rkvProject\rkvApp\static\images" />
+      <recent name="C:\Users\shaej\PycharmProjects\rkvProject\rkvApp" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="rkvProject" type="Python.DjangoServer" factoryName="Django server">
       <module name="rkvProject" />
@@ -45,6 +61,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="rkvProject.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -80,7 +97,12 @@
       <option name="presentableId" value="Default" />
       <updated>1720395261909</updated>
       <workItem from="1720395263286" duration="111000" />
-      <workItem from="1720395385411" duration="310000" />
+      <workItem from="1720395385411" duration="695000" />
+      <workItem from="1720396092682" duration="5775000" />
+      <workItem from="1720408582636" duration="1736000" />
+      <workItem from="1720410327679" duration="22000" />
+      <workItem from="1720410375704" duration="564000" />
+      <workItem from="1720410960803" duration="1499000" />
     </task>
     <servers />
   </component>
