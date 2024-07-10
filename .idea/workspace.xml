@@ -7,8 +7,12 @@
     <list default="true" id="6df211d6-286a-4c24-959d-e1695cb7075d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rkvApp/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/static/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rkvApp/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/templates/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rkvApp/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rkvApp/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rkvApp/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rkvApp/templates/documentary.html" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/templates/documentary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rkvApp/templates/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/templates/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rkvApp/templates/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/templates/show.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +112,7 @@
       <workItem from="1720493163794" duration="1373000" />
       <workItem from="1720494910105" duration="5049000" />
       <workItem from="1720561754537" duration="5200000" />
-      <workItem from="1720582358013" duration="2655000" />
+      <workItem from="1720582358013" duration="3766000" />
     </task>
     <servers />
   </component>

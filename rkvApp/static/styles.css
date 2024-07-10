@@ -24,6 +24,7 @@ footer {
     padding: 10px 20px;
     text-align: center;
     color: #fff;
+    margin-top: 50px;
 }
 
 .footer-list {
@@ -98,6 +99,7 @@ footer {
 }
 
 .main-menu li a {
+    display: inline-block;
     padding: 10px 20px;
     text-decoration: none;
     color: #fff;
@@ -109,25 +111,28 @@ footer {
                  4px 4px 0 #111;
 }
 
-.main-menu li a:hover {
+.main-menu li a:hover,
+.main-menu li.active a {
     color: #fff;
 }
 
-.main-menu li a:before {
+.main-menu li a:before,
+.main-menu li.active a:before {
     content: '';
     position: absolute;
-    width: 100%;
+    width: 80%;
     height: 4px;
     background-color: #fff;
     top: -5px;
-    left: 0;
-    transform: scaleX(0);
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
     transform-origin: bottom center;
     transition: transform 0.1s ease-in-out;
 }
 
-.main-menu li a:hover:before {
-    transform: scaleX(1);
+.main-menu li a:hover:before,
+.main-menu li.active a:before {
+    transform: translateX(-50%) scaleX(1);
     transform-origin: bottom center;
 }
 
@@ -200,7 +205,6 @@ footer {
 
 .featured-clients-section {
     text-align: center;
-    padding-bottom: 50px;
 }
 
 .featured-clients-title {

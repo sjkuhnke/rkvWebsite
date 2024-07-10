@@ -43,12 +43,12 @@
     <header class="site-header">
         <nav>
             <ul class="main-menu">
-                <li><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="{% url 'about' %}">About</a></li>
-                <li><a href="{% url 'documentary' %}">Documentary</a></li>
-                <li><a href="{% url 'show' %}">Showreels</a></li>
-                <li><a href="{% url 'projects' %}">Upcoming Projects</a></li>
-                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}"><a href="{% url 'home' %}">Home</a></li>
+                <li class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}"><a href="{% url 'about' %}">About</a></li>
+                <li class="{% if request.resolver_match.url_name == 'documentary' %}active{% endif %}"><a href="{% url 'documentary' %}">Documentary</a></li>
+                <li class="{% if request.resolver_match.url_name == 'show' %}active{% endif %}"><a href="{% url 'show' %}">Showreels</a></li>
+                <li class="{% if request.resolver_match.url_name == 'projects' %}active{% endif %}"><a href="{% url 'projects' %}">Upcoming Projects</a></li>
+                <li class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}"><a href="{% url 'contact' %}">Contact</a></li>
             </ul>
         </nav>
     </header>
