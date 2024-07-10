@@ -1,6 +1,8 @@
 <!-- templates/home.html -->
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block title %}RK Videos | Film & TV Production Services | Appleton, WI{% endblock %}
 {% block description %}Welcome to RK Videos, your ultimate destination for film and TV content, and video production services in Appleton, Wisconsin. Explore our collection of captivating videos and our award-winning film "Unconditional: A Journey of Selfless Love."{% endblock %}
 {% block canonical_url %}https://www.rkvideos-co.com{% endblock %}
@@ -32,10 +34,68 @@
 {% endblock %}
 
 {% block content %}
-    <div id="home-logo" class="home-logo">
-
+    <div id="home-logo-container" class="home-logo-container">
+        <img src="{% static 'images/rkvideos_logo.png' %}" alt="Logo 1" class="home-logo">
     </div>
-    <div id="home-company-info" class="home-company-info">
+    <div id="home-info-container" class="home-info-container">
+        <p class="home-info">MIDWEST VIDEO<br>PRODUCTION COMPANY</p>
+    </div>
 
+    <div class="quotes-container">
+        <div class="quote">
+            <div class="quote-symbols">’’</div>
+            <p class="quote-text"><i>Thank you RK Videos for producing two outstanding videos for our non-profit organization. We have received numerous compliments!</i></p>
+            <p class="quote-client">
+                Anne Tretinyak<br>
+                <span class="client-details">Executive Director <i>Vida Medical Services</i></span>
+            </p>
+        </div>
+
+        <div class="quote">
+            <div class="quote-symbols">’’</div>
+            <p class="quote-text"><i>We hired RK Videos to shoot video for us for a television commercial. Riley was great to work with, video quality was great, turnaround was phenomenal and we love the commercial. I highly recommend RK Videos and we will work with them again!!</i></p>
+            <p class="quote-client">
+                Paul Bradshaw<br>
+                <span class="client-details">Owner of <i>Ballhawk Basketball</i></span>
+            </p>
+        </div>
+
+        <div class="quote">
+            <div class="quote-symbols">’’</div>
+            <p class="quote-text"><i>Great experience with RK Videos. They were able to fly quickly and with a great amount of skill for the short prep time needed for this flight. They were able to perform a fairly complex shoot well, and also asked great questions for clarification before hand. Would highly recommend them for their great work.</i></p>
+            <p class="quote-client">
+                Gordon<br>
+                <span class="client-details"><i>Epigraph</i></span>
+            </p>
+        </div>
+
+        <div class="quote">
+            <div class="quote-symbols">’’</div>
+            <p class="quote-text"><i>The first project was so amazing that we are working with RK Videos for a second project!</i></p>
+            <p class="quote-client">
+                Cindy Thompson<br>
+                <span class="client-details">Family Caregivers Rock</span>
+            </p>
+        </div>
+    </div>
+    <div class="featured-clients-section">
+        <p class="featured-clients-title">Featured Clients</p>
+        <div class="featured-clients-grid">
+            <a href="https://www.youtube.com/user/coralfish12g/videos" target="_blank">
+                <img src="{% static 'images/coralfish.png' %}" alt="Coral Fish 12g" class="featured-client-logo">
+            </a>
+            <a href="https://www.villageofhoward.com/" target="_blank">
+                <img src="{% static 'images/howard.png' %}" alt="Village of Howard" class="featured-client-logo">
+            </a>
+            <a href="https://connect.thrivent.com/badgerland-group/about" target="_blank">
+                <img src="{% static 'images/thrivent_1.png' %}" alt="Thrivent Badgerland Group" class="featured-client-logo">
+            </a>
+            <a href="https://www.airwis.com/" target="_blank">
+                <img src="{% static 'images/air_wisconsin.png' %}" alt="Air Wisconsin" class="featured-client-logo">
+            </a>
+            <a href="https://saputo.com/en" target="_blank">
+                <img src="{% static 'images/saputo.png' %}" alt="Saputo" class="featured-client-logo">
+            </a>
+        </div>
     </div>
 {% endblock %}

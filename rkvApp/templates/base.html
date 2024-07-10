@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
     <meta name="description" content="{% block description %}{% endblock %}">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
     <link rel="canonical" href="{% block canonical_url %}{% endblock %}">
 
     <!-- Open Graph / Facebook -->
@@ -37,7 +38,6 @@
 
     <link rel="stylesheet" type=text/css href="{% static 'styles.css' %}">
 
-
 </head>
 <body>
     <header class="site-header">
@@ -53,16 +53,6 @@
         </nav>
     </header>
 
-    <aside class="sidebar">
-        <div class="sidebar-content">
-            <p>Video Production Company<br>
-            Appleton, WI<br>
-            Milwaukee, WI<br>
-            <a href="mailto:info@rkvideos-co.com">info@rkvideos-co.com</a><br>
-            <a href="tel:9204756641">(920) 475-6641</a></p>
-        </div>
-    </aside>
-
     <main>
         {% block content %}{% endblock %}
     </main>
@@ -70,16 +60,39 @@
     <!-- Footer -->
     <footer id="site-footer" class="site-footer">
         <ul class="footer-list" aria-label="Social Bar">
-            <li><a href="https://vimeo.com/user194886022" target="_blank" rel="noopener noreferrer" aria-label="Vimeo"><img src="{% static 'images/vimeo.png' %}" alt="Vimeo"></a></li>
-            <li><a href="https://www.facebook.com/rkvideorecordings" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="{% static 'images/facebook.png' %}" alt="Facebook"></a></li>
-            <li><a href="https://www.youtube.com/channel/UCyAvGTuuAA9Pu1pvD4OB1wA?view_as=subscriber" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="{% static 'images/youtube.png' %}" alt="YouTube"></a></li>
-            <li><a href="https://www.instagram.com/rkvideosllc/?hl=en" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="{% static 'images/instagram.png' %}" alt="Instagram"></a></li>
+            <li><a href="https://vimeo.com/user194886022" target="_blank" rel="noopener noreferrer" aria-label="Vimeo">
+                <img src="{% static 'images/vimeo.png' %}" alt="Vimeo">
+            </a></li>
+            <li><a href="https://www.facebook.com/rkvideorecordings" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <img src="{% static 'images/facebook.png' %}" alt="Facebook">
+            </a></li>
+            <li><a href="https://www.youtube.com/channel/UCyAvGTuuAA9Pu1pvD4OB1wA?view_as=subscriber" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                <img src="{% static 'images/youtube.png' %}" alt="YouTube">
+            </a></li>
+            <li><a href="https://www.instagram.com/rkvideosllc/?hl=en" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <img src="{% static 'images/instagram.png' %}" alt="Instagram">
+            </a></li>
         </ul>
         <div class="footer-text-container">
-            <p class="footer-text">
+            <p class="footer-text"><i>
                 &copy; 2024 by RK Videos, LLC
+            </i>
             </p>
         </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const header = document.querySelector('.site-header');
+            const threshold = 50;
+
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > threshold) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

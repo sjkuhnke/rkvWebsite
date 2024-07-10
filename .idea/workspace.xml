@@ -9,9 +9,6 @@
       <change beforePath="$PROJECT_DIR$/rkvApp/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/static/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rkvApp/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rkvApp/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rkvApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rkvProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/rkvProject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rkvProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rkvProject/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +33,9 @@
   &quot;keyToString&quot;: {
     &quot;Django Server.rkvProject.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR_AND_PREVIEW&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -49,6 +48,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\shaej\PycharmProjects\rkvWebsite\rkvApp\static\images" />
       <recent name="C:\Users\shaej\PycharmProjects\rkvProject\rkvApp\static\images" />
       <recent name="C:\Users\shaej\PycharmProjects\rkvProject\rkvApp" />
     </key>
@@ -56,14 +56,14 @@
   <component name="RunManager">
     <configuration name="rkvProject" type="Python.DjangoServer" factoryName="Django server">
       <module name="rkvProject" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="rkvProject.settings" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\shaej\AppData\Local\Programs\Python\Python312\python.exe" />
+      <option name="SDK_NAME" value="Python 3.12" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -72,7 +72,7 @@
       <option name="port" value="8000" />
       <option name="host" value="localhost" />
       <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
+      <option name="browserUrl" value="http://localhost:8000/" />
       <option name="runTestServer" value="false" />
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
@@ -103,6 +103,12 @@
       <workItem from="1720410327679" duration="22000" />
       <workItem from="1720410375704" duration="564000" />
       <workItem from="1720410960803" duration="1499000" />
+      <workItem from="1720491942699" duration="5000" />
+      <workItem from="1720492036287" duration="1038000" />
+      <workItem from="1720493163794" duration="1373000" />
+      <workItem from="1720494910105" duration="5049000" />
+      <workItem from="1720561754537" duration="5200000" />
+      <workItem from="1720582358013" duration="2655000" />
     </task>
     <servers />
   </component>
