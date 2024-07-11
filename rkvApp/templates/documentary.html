@@ -34,5 +34,33 @@
 {% endblock %}
 
 {% block content %}
+<div class="documentary-container">
+    <h1 class="documentary-title">Unconditional: A Journey of Selfless Love</h1>
 
+    <div class="awards-grid">
+        <img src="{% static 'images/award_1.png' %}" alt="Award 1" class="award">
+        <img src="{% static 'images/award_2.png' %}" alt="Award 2" class="award">
+        <img src="{% static 'images/award_3.png' %}" alt="Award 3" class="award">
+        <img src="{% static 'images/award_4.png' %}" alt="Award 4" class="award">
+        <img src="{% static 'images/award_5.png' %}" alt="Award 5" class="award award-large">
+    </div>
+
+    <div class="trailer-container">
+        <video controls poster="{% static 'images/trailer_thumbnail.jpg' %}">
+            <source src="{% static 'videos/documentary_trailer.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="trailer-text">Unconditional | Official Trailer (2022)</div>
+    </div>
+
+    <p class="documentary-info">
+        RK Videos is excited to release a 45-minute documentary which shares the stories of four individuals as they are challenged with assuming the role of caregiver of their loved ones. Through the joys and trials, one thing remains constant, their unconditional love for their spouses. Stream the film now on
+        <a href="https://www.amazon.com/Unconditional-Journey-Selfless-Susan-Drews/dp/B0B8Q8KH42/ref=sr_1_2?crid=3A11OJ57HW3TY&keywords=unconditional&qid=1703801501&s=instant-video&sprefix=unconditional%2Cinstant-video%2C106&sr=1-2" target="_blank" rel="noopener noreferrer">Amazon Prime Video</a> or
+        <a href="https://tubitv.com/movies/100006099/unconditional-a-journey-of-selfless-love" target="_blank" rel="noopener noreferrer">Tubi</a>!
+    </p>
+
+    <p class="stats-info">
+        *all stats provided in the film can be accessed <a href="https://www.alz.org/media/Documents/wisconsin-alzheimers-facts-figures-2022.pdf" target="_blank" rel="noopener noreferrer">here</a> and <a href="https://www.foxvalleymemoryproject.org/?gclid=Cj0KCQiAorKfBhC0ARIsAHDzsltEaDs3qZnIa77Is_dkLh7Tz0t7ocoxPKo5v3rHOtUpfQSaK1PYVuUaAs9TEALw_wcB" target="_blank" rel="noopener noreferrer">here</a>!*
+    </p>
+</div>
 {% endblock %}

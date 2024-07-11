@@ -242,6 +242,108 @@ footer {
     transform: scale(1.05);
 }
 
+/* About me */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.about-image {
+    position: relative;
+    width: 304px; /* Adjust the width as needed */
+    height: 342px; /* Adjust the height as needed */
+    overflow: hidden;
+    border-radius: 80% / 80%; /* Creates a slight vertical oval shape */
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-bio {
+    max-width: 600px; /* Adjust the width as needed */
+    padding: 20px;
+    font-family: 'Leelawadee UI', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #fff;
+    text-shadow: 1px 1px 0 #000,
+                 2px 2px 0 #555,
+                 3px 3px 0 #333,
+                 4px 4px 0 #111;
+}
+
+/* Documentary Page */
+.documentary-container {
+    text-align: center;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+.documentary-title {
+    font-family: 'Leelawadee UI', sans-serif;
+    font-size: 3.5em;
+    margin: 30px;
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto auto;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.awards-grid img {
+    max-width: 100%;
+    height: auto;
+}
+
+.award {
+    grid-column: span 1;
+}
+
+.award-large {
+    grid-column: span 2;
+    margin: auto;
+}
+
+.trailer-container {
+    margin: 40px 0;
+}
+
+.trailer-container video {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.trailer-text {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.documentary-info, .stats-info {
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: 'Leelawadee UI', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.documentary-info a, .stats-info a {
+    color: #fff;
+    text-decoration: underline;
+}
+
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .site-header {
@@ -251,5 +353,13 @@ footer {
 
     .home-logo {
         width: 100%;
+    }
+
+    .awards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .award-large {
+        grid-column: span 1;
     }
 }
