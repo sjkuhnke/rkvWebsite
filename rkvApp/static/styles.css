@@ -288,18 +288,26 @@ footer {
 }
 
 .documentary-title {
-    font-family: 'Leelawadee UI', sans-serif;
-    font-size: 3.5em;
-    margin: 30px;
+    font-family: 'Calibri', sans-serif;
+    font-size: 5em;
+    letter-spacing: 0.02em;
+    margin: 60px auto;
+    max-width: 1200px;
+    text-shadow: 1px 1px 0 #000,
+                 2px 2px 0 #555,
+                 3px 3px 0 #333,
+                 4px 4px 0 #111;
 }
 
 .awards-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: auto auto;
-    gap: 20px;
-    justify-content: center;
+    gap: 0;
+    justify-items: center;
     align-items: center;
+    max-width: 1000px;
+    margin: 40px auto;
 }
 
 .awards-grid img {
@@ -316,12 +324,21 @@ footer {
     margin: auto;
 }
 
+.awards-grid img:nth-child(1) {
+    transform: translateX(60%);
+}
+
+.awards-grid img:nth-child(2) {
+    transform: translateX(-60%);
+}
+
 .trailer-container {
-    margin: 40px 0;
+    max-width: 800px;
+    margin: 40px auto;
 }
 
 .trailer-container video {
-    max-width: 100%;
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -344,6 +361,101 @@ footer {
     text-decoration: underline;
 }
 
+/* Showreels */
+.showreels-container {
+    text-align: center;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+.video-section {
+    margin: 40px 0;
+}
+
+.video-section p {
+    font-family: 'Calibri', sans-serif;
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    letter-spacing: 0.02em;
+    text-shadow: 1px 1px 0 #000,
+                 2px 2px 0 #555,
+                 3px 3px 0 #333,
+                 4px 4px 0 #111;
+}
+
+.video-section iframe {
+    width: 100%;
+    max-width: 640px;
+    height: 360px;
+    border-radius: 10px;
+}
+
+/* Upcoming Projects */
+.projects-container {
+    text-align: center;
+    padding: 40px 20px;
+    color: #fff;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.page-title {
+    font-family: 'Calibri', sans-serif;
+    font-size: 3em;
+    letter-spacing: 0.02em;
+    margin: 30px 20px;
+    text-shadow: 1px 1px 0 #000,
+                 2px 2px 0 #555,
+                 3px 3px 0 #333,
+                 4px 4px 0 #111;
+}
+
+.project {
+    margin: 0 20px 40px 20px;
+}
+
+.project-title {
+    font-family: 'Leelawadee UI', sans-serif;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.project-role {
+    font-family: 'Leelawadee UI', sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-description {
+    font-family: 'Leelawadee UI', sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.learn-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Leelawadee UI', sans-serif;
+    font-size: 1em;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.learn-more-button:hover {
+    background-color: #555;
+}
+
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .site-header {
@@ -359,7 +471,34 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .awards-grid img {
+        transform: none;
+    }
+
     .award-large {
         grid-column: span 1;
+    }
+
+    .documentary-title {
+        font-family: 'Calibri', sans-serif;
+        font-size: 2.5em;
+        letter-spacing: 0.02em;
+        margin-top: 70px;
+        text-shadow: 1px 1px 0 #000,
+                     2px 2px 0 #555,
+                     3px 3px 0 #333,
+                     4px 4px 0 #111;
+    }
+
+    .awards-grid img:nth-child(1),
+    .awards-grid img:nth-child(2) {
+        transform: none;
+    }
+
+    .video-section iframe {
+        width: 100%;
+        max-width: 360px;
+        height: 200px;
+        border-radius: 10px;
     }
 }

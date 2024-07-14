@@ -7,7 +7,9 @@
     <list default="true" id="6df211d6-286a-4c24-959d-e1695cb7075d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rkvApp/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/static/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rkvApp/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rkvApp/templates/documentary.html" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/templates/documentary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rkvApp/templates/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/templates/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rkvApp/templates/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/templates/show.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,15 +49,16 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\shaej\PycharmProjects\rkvProject\rkvApp\static\images" />
       <recent name="C:\Users\shaej\PycharmProjects\rkvWebsite\rkvApp\static\videos" />
       <recent name="C:\Users\shaej\PycharmProjects\rkvWebsite\rkvApp\static\images" />
-      <recent name="C:\Users\shaej\PycharmProjects\rkvProject\rkvApp\static\images" />
       <recent name="C:\Users\shaej\PycharmProjects\rkvProject\rkvApp" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="rkvProject" type="Python.DjangoServer" factoryName="Django server">
       <module name="rkvProject" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -63,9 +66,8 @@
         <env name="DJANGO_SETTINGS_MODULE" value="rkvProject.settings" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\shaej\AppData\Local\Programs\Python\Python312\python.exe" />
-      <option name="SDK_NAME" value="Python 3.12" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
@@ -112,6 +114,7 @@
       <workItem from="1720587414096" duration="26000" />
       <workItem from="1720630072314" duration="57000" />
       <workItem from="1720715359239" duration="1318000" />
+      <workItem from="1720901024066" duration="3686000" />
     </task>
     <servers />
   </component>
