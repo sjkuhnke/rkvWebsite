@@ -403,7 +403,7 @@ footer {
     font-family: 'Calibri', sans-serif;
     font-size: 3em;
     letter-spacing: 0.02em;
-    margin: 30px 20px;
+    margin: 30px 90px;
     text-shadow: 1px 1px 0 #000,
                  2px 2px 0 #555,
                  3px 3px 0 #333,
@@ -434,26 +434,108 @@ footer {
 }
 
 .project-description {
-    font-family: 'Leelawadee UI', sans-serif;
+    font-family: 'Calibri', sans-serif;
     font-size: 1.2em;
+    margin-left: 75px;
+    margin-right: 75px;
     margin-bottom: 20px;
     line-height: 1.5;
+    text-shadow: 1px 1px 0 #000,
+                 2px 2px 0 #555,
+                 3px 3px 0 #333,
+                 4px 4px 0 #111;
 }
 
 .learn-more-button {
     display: inline-block;
-    padding: 10px 20px;
-    font-family: 'Leelawadee UI', sans-serif;
+    padding: 10px 25px;
+    margin-bottom: 20px;
+    font-family: 'Calibri', sans-serif;
     font-size: 1em;
-    color: #fff;
-    background-color: #333;
+    color: #000;
+    background-color: #fff;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition: letter-spacing 0.3s;
 }
 
 .learn-more-button:hover {
-    background-color: #555;
+    letter-spacing: 0.03em;
+}
+
+/* Contact Page */
+.contact-container {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.contact-container h2, .contact-container h3, .contact-container p {
+    font-family: 'Calibri', sans-serif;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-size: 1em;
+    padding: 10px 5px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-bottom-color: #ff0000; /* Change to red if invalid */
+}
+
+.form-group label {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    color: #fff;
+    font-size: 1em;
+    transition: 0.2s ease all;
+}
+
+.form-group input:focus + label,
+.form-group input:valid + label,
+.form-group textarea:focus + label,
+.form-group textarea:valid + label {
+    top: -20px;
+    font-size: 0.8em;
+    color: #ff0000; /* Change to red if invalid */
+}
+
+.submit-container {
+    text-align: center;
+}
+
+.submit-container button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.submit-container button:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 /* Media Queries for Responsive Design */
@@ -500,5 +582,15 @@ footer {
         max-width: 360px;
         height: 200px;
         border-radius: 10px;
+    }
+
+    .page-title {
+        font-size: 2.6em;
+        margin: 30px 20px;
+    }
+
+    .project-description {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
