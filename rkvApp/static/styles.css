@@ -67,8 +67,8 @@ footer {
 .site-header {
     background-color: transparent;
     color: #fff;
-    padding: 40px 20px;
-    position: fixed;
+    padding-top: 40px;
+    position: relative;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -78,12 +78,6 @@ footer {
     transition: all 0.3s ease-in-out;
     border: 1px solid transparent;
     border-radius: 15px;
-}
-
-.site-header.scrolled {
-    border: 1px solid white;
-    backdrop-filter: blur(4px);
-    background-color: rgb(0,0,0,0.1);
 }
 
 .main-menu {
@@ -146,9 +140,14 @@ footer {
 }
 
 .home-logo {
-    margin-top: 40px;
     width: 50%;
     padding: 40px;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.home-logo:hover {
+    transform: scale(105%);
 }
 
 .home-info {
@@ -179,6 +178,12 @@ footer {
     padding: 20px;
     text-align: center;
     color: #fff;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.quote:hover {
+    transform: scale(105%);
 }
 
 .quote-symbols {
@@ -248,7 +253,7 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 60px 20px;
+    padding: 20px 20px;
 }
 
 .about-image {
@@ -257,8 +262,7 @@ footer {
     height: 342px; /* Adjust the height as needed */
     overflow: hidden;
     border-radius: 80% / 80%; /* Creates a slight vertical oval shape */
-    margin-top: 100px;
-    margin-bottom: 40px;
+    margin: 20px 0;
 }
 
 .about-image img {
@@ -291,7 +295,7 @@ footer {
     font-family: 'Calibri', sans-serif;
     font-size: 5em;
     letter-spacing: 0.02em;
-    margin: 60px auto;
+    margin: 0 auto;
     max-width: 1200px;
     text-shadow: 1px 1px 0 #000,
                  2px 2px 0 #555,
@@ -348,7 +352,7 @@ footer {
     font-style: italic;
 }
 
-.documentary-info, .stats-info {
+.documentary-info {
     max-width: 800px;
     margin: 20px auto;
     font-family: 'Leelawadee UI', sans-serif;
@@ -356,7 +360,7 @@ footer {
     line-height: 1.5;
 }
 
-.documentary-info a, .stats-info a {
+.documentary-info a {
     color: #fff;
     text-decoration: underline;
 }
@@ -364,7 +368,7 @@ footer {
 /* Showreels */
 .showreels-container {
     text-align: center;
-    padding: 40px 20px;
+    padding: 0 20px;
     color: #fff;
 }
 
@@ -403,7 +407,7 @@ footer {
     font-family: 'Calibri', sans-serif;
     font-size: 3em;
     letter-spacing: 0.02em;
-    margin: 30px 90px;
+    margin: 0 90px;
     text-shadow: 1px 1px 0 #000,
                  2px 2px 0 #555,
                  3px 3px 0 #333,
@@ -469,7 +473,7 @@ footer {
     max-width: 600px;
     text-align: center;
     color: #fff;
-    padding: 20px;
+    padding: 0;
 }
 
 .contact-container h2, .contact-container h3, .contact-container p {
@@ -562,14 +566,7 @@ footer {
     }
 
     .documentary-title {
-        font-family: 'Calibri', sans-serif;
         font-size: 2.5em;
-        letter-spacing: 0.02em;
-        margin-top: 70px;
-        text-shadow: 1px 1px 0 #000,
-                     2px 2px 0 #555,
-                     3px 3px 0 #333,
-                     4px 4px 0 #111;
     }
 
     .awards-grid img:nth-child(1),
@@ -585,7 +582,7 @@ footer {
     }
 
     .page-title {
-        font-size: 2.6em;
+        font-size: 2.0em;
         margin: 30px 20px;
     }
 
