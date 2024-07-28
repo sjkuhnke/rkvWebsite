@@ -8,7 +8,7 @@ body, html {
 
 body {
     background-image: url('../static/images/background.jpg');
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -314,9 +314,20 @@ footer {
     margin: 40px auto;
 }
 
+.awards-grid a {
+    display: block;
+    text-align: center;
+}
+
 .awards-grid img {
     max-width: 100%;
     height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.awards-grid a:hover img {
+    transform: scale(1.05);
 }
 
 .award {
@@ -328,12 +339,20 @@ footer {
     margin: auto;
 }
 
-.awards-grid img:nth-child(1) {
+.awards-grid a:nth-child(1) img {
     transform: translateX(60%);
 }
 
-.awards-grid img:nth-child(2) {
+.awards-grid a:nth-child(1):hover img {
+    transform: translateX(60%) scale(1.05);
+}
+
+.awards-grid a:nth-child(2) img {
     transform: translateX(-60%);
+}
+
+.awards-grid a:nth-child(2):hover img {
+    transform: translateX(-60%) scale(1.05);
 }
 
 .trailer-container {
@@ -553,11 +572,15 @@ footer {
         width: 100%;
     }
 
+    .documentary-title {
+        font-size: 2.5em;
+    }
+
     .awards-grid {
         grid-template-columns: 1fr;
     }
 
-    .awards-grid img {
+    .awards-grid a img {
         transform: none;
     }
 
@@ -565,12 +588,8 @@ footer {
         grid-column: span 1;
     }
 
-    .documentary-title {
-        font-size: 2.5em;
-    }
-
-    .awards-grid img:nth-child(1),
-    .awards-grid img:nth-child(2) {
+    .awards-grid a:nth-child(1) img,
+    .awards-grid a:nth-child(2) img {
         transform: none;
     }
 
