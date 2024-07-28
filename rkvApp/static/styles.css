@@ -9,9 +9,9 @@ body, html {
 body {
     background-image: url('../static/images/background.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 main {
