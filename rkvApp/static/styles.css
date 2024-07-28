@@ -8,7 +8,7 @@ body, html {
 
 body {
     background-image: url('../static/images/background.jpg');
-    background-size: cover;
+    background-size: auto 110%;
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: scroll;
