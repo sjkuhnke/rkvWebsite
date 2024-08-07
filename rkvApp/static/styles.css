@@ -4,17 +4,16 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden; /* Optional: prevent scroll bars */
 }
 
 #background-image-container {
-    position: fixed; /* Fixes the image in place */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Places it behind other content */
-    overflow: hidden; /* Ensures no scroll bars */
+    z-index: -1;
+    overflow: hidden;
 }
 
 #background-image-container img {
@@ -23,8 +22,8 @@ body, html {
     left: 50%;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the container */
-    transform: translate(-50%, -50%); /* Centers the image */
+    object-fit: cover;
+    transform: translate(-50%, -50%);
 }
 
 main {
