@@ -4,6 +4,8 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow-x: hidden;
+    overscroll-behavior-y: none;
 }
 
 #background-image-container {
@@ -684,6 +686,10 @@ footer {
     }
 
     .hamburger {
+        display: block;
+    }
+
+    .mobile-nav {
         display: block;
     }
 

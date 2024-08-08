@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6df211d6-286a-4c24-959d-e1695cb7075d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rkvApp/static/images/trailer_thumbnail.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/static/images/trailer_thumbnail.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rkvApp/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/static/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rkvApp/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +129,7 @@
       <workItem from="1721928270907" duration="1647000" />
       <workItem from="1722186592284" duration="7794000" />
       <workItem from="1722369580126" duration="5000" />
-      <workItem from="1723072452349" duration="2115000" />
+      <workItem from="1723072452349" duration="2766000" />
     </task>
     <servers />
   </component>
