@@ -16,6 +16,7 @@ Including another URLconf
 """
 from django.urls import path
 from rkvApp import views
+from django.conf.urls import handler404
 
 urlpatterns = [
     path('', views.home, name='home'),
@@ -25,3 +26,5 @@ urlpatterns = [
     path('projects/', views.projects, name='projects'),
     path('contact/', views.contact, name='contact'),
 ]
+
+handler404 = 'rkvApp.views.custom_404'

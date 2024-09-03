@@ -1,3 +1,6 @@
+from django.core.mail import EmailMessage
+from django.template.loader import render_to_string
+from django.conf import settings
 from django.shortcuts import render
 
 
@@ -20,11 +23,6 @@ def show(request):
 def projects(request):
     return render(request, 'projects.html')
 
-
-from django.core.mail import EmailMessage
-from django.template.loader import render_to_string
-from django.conf import settings
-from django.shortcuts import render
 
 def contact(request):
     if request.method == 'POST':
@@ -52,8 +50,13 @@ def contact(request):
 
         try:
             email_message.send()
-            return render(request, 'contact.html', {'success': 'Thank you for your message. We will get back to you shortly.'})
+            return render(request, 'contact.html',
+                          {'success': 'Thank you for your message. We will get back to you shortly.'})
         except Exception as e:
             return render(request, 'contact.html', {'error': f'An error occurred: {str(e)}'})
 
     return render(request, 'contact.html')
+
+
+def custom_404(request, exception):
+    return render(request, '404.html', {}, status=404)

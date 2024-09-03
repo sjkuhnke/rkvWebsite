@@ -38,6 +38,12 @@
     <h2>Let's Talk!</h2>
     <p>Riley Killian<br>RK Videos, LLC<br>Video Production Company<br>920-475-6641<br>info@rkvideos-co.com<br>Appleton, Wisconsin<br>Milwaukee, Wisconsin</p>
 
+    {% if success %}
+        <p class="success-message">{{ success }}</p>
+    {% elif error %}
+        <p class="error-message">{{ error }}</p>
+    {% endif %}
+
     <h3>Or Leave a Message Here:</h3>
 
     <form action="{% url 'contact' %}" method="post">
@@ -67,4 +73,30 @@
         </div>
     </form>
 </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const formGroups = document.querySelectorAll('.form-group');
+
+        formGroups.forEach(group => {
+            const input = group.querySelector('input, textarea');
+            const label = group.querySelector('label');
+
+            input.addEventListener('focus', () => {
+                label.style.color = '';  // Reset the color on focus
+            });
+
+            input.addEventListener('blur', () => {
+                const label = input.nextElementSibling;
+                console.log(label);
+                if (input.validity.valid || input.value !== '') {
+                    label.classList.add('up'); // Keep label up if field is valid or has content
+                    label.style.color = input.validity.valid ? '#fff' : '#ff0000'; // Set color based on validity
+                } else {
+                    label.classList.remove('up'); // Move label back to neutral if empty
+                    label.style.color = '#ff0000'; // Color red if empty and invalid
+                }
+            });
+        });
+    });
+</script>
 {% endblock %}
