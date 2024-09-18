@@ -98,4 +98,25 @@
             </a>
         </div>
     </div>
+    <script>
+        let lastKnownScrollPosition = 0;
+        let ticking = false;
+
+        function doSomething(scrollPos) {
+          console.log(scrollPos);
+        }
+
+        document.addEventListener("scroll", (event) => {
+          lastKnownScrollPosition = window.scrollY;
+
+          if (!ticking) {
+            window.requestAnimationFrame(() => {
+              doSomething(lastKnownScrollPosition);
+              ticking = false;
+            });
+
+            ticking = true;
+          }
+        });
+    </script>
 {% endblock %}
