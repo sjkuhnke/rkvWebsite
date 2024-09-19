@@ -194,16 +194,22 @@ footer {
 
 /* Mobile nav styles */
 .mobile-nav {
+    display: none;
     position: fixed;
+    left: -250px; /* Initially off-screen to the left */
     top: 0;
-    right: 0;
-    width: 250px;
+    width: 250px; /* Sidebar width */
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    transform: translateX(100%);
-    transition: transform 0.3s ease;
+    background: rgba(0, 0, 0, 0.8); /* Dark background with transparency */
     z-index: 1000;
-    overflow-y: auto;
+    transition: left 0.3s ease, opacity 0.3s ease; /* Animation for sliding in */
+    opacity: 0; /* Start invisible */
+}
+
+/* When active, slide the nav into view */
+.mobile-nav.active {
+    left: 0; /* Slide the sidebar fully onto the screen */
+    opacity: 1; /* Fade in */
 }
 
 .mobile-nav ul {
@@ -262,10 +268,6 @@ footer {
     padding: 40px;
     cursor: pointer;
     transition: ease-in-out 0.2s;
-}
-
-.home-logo:hover {
-    transform: scale(105%);
 }
 
 .home-info {
@@ -327,7 +329,14 @@ footer {
 }
 
 .featured-clients-section {
-    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.featured-clients-section.in-view {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .featured-clients-title {
@@ -343,19 +352,20 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
+    max-width: 1200px; /* Adjust max-width as needed */
+    margin: 0 auto; /* Centers the grid on the page */
 }
 
 .featured-clients-grid a {
+    flex: 1 1 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1 1 auto;
-    max-width: 250px;
 }
 
 .featured-client-logo {
-    flex: 0 1 150px;
     width: 90%;
+    max-width: 300px;
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s;
@@ -602,15 +612,22 @@ footer {
 /* Contact Page */
 .contact-container {
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 500px;
     text-align: center;
     color: #fff;
     padding: 0;
 }
 
-.contact-container h2, .contact-container h3, .contact-container p {
+.contact-container h2, .contact-container h3 {
     font-family: 'Calibri', sans-serif;
     margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.contact-container p {
+    font-family: 'Calibri', sans-serif;
+    margin-bottom: 20px;
+    font-size: 1.3em;
 }
 
 .form-group {
@@ -629,6 +646,7 @@ footer {
     padding: 10px 5px;
     box-sizing: border-box;
     transition: border-bottom-color 0.2s ease-in-out;
+    font-family: 'Calibri', sans-serif;
 }
 
 .form-group input:focus,
@@ -773,8 +791,18 @@ footer {
         display: none;
     }
 
+    .quote {
+        margin-bottom: 20px;
+    }
+
+    /* Show the hamburger menu on mobile */
     .hamburger {
         display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1001;
+        cursor: pointer;
     }
 
     .mobile-nav {

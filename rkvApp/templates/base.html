@@ -110,51 +110,49 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const container = document.getElementById('page-transition-container');
+            const hamburger = document.querySelector('.hamburger');
+            const mobileNav = document.querySelector('.mobile-nav');
 
-            // Function to start the fade-out effect
+            // Mobile nav toggle
+            hamburger.addEventListener('click', function(event) {
+                // Prevent any default behavior for the label or input interaction
+                event.preventDefault();
+
+                // Manually toggle the class
+                if (!mobileNav.classList.contains('active')) {
+                    mobileNav.classList.add('active');
+                } else {
+                    mobileNav.classList.remove('active');
+                }
+            });
+
+            // Fade in and out transitions
             function fadeOut() {
                 container.classList.remove('active');
                 setTimeout(() => {
                     container.style.opacity = '0';
-                }, 500); // Delay to ensure the transition happens
+                }, 500);
             }
 
-            // Function to start the fade-in effect
             function fadeIn() {
                 container.style.opacity = '1';
                 container.classList.add('active');
             }
 
-            // Listen for navigation link clicks
             document.querySelectorAll('nav a').forEach(link => {
                 link.addEventListener('click', event => {
                     event.preventDefault();
                     const href = link.getAttribute('href');
 
-                    // Start fade-out
                     fadeOut();
 
-                    // Load the new page
                     setTimeout(() => {
                         window.location.href = href;
-                    }, 300); // Delay to match the transition duration
+                    }, 300);
                 });
             });
 
-            // On page load, start fade-in
             fadeIn();
-
-            const hamburger = document.querySelector('.hamburger');
-            const mobileNav = document.querySelector('.mobile-nav');
-
-            hamburger.addEventListener('click', function() {
-                // Toggle the visibility of the mobile nav
-                if (mobileNav.classList.contains('active')) {
-                    mobileNav.classList.remove('active');
-                } else {
-                    mobileNav.classList.add('active');
-                }
-            });
         });
     </script>
 </body>

@@ -8,8 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rkvApp/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/static/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rkvApp/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rkvApp/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rkvApp/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +168,8 @@
       <workItem from="1725335132282" duration="264000" />
       <workItem from="1725335450319" duration="1148000" />
       <workItem from="1725383588593" duration="3253000" />
-      <workItem from="1726616254113" duration="7647000" />
+      <workItem from="1726616254113" duration="8899000" />
+      <workItem from="1726758337315" duration="6853000" />
     </task>
     <servers />
   </component>

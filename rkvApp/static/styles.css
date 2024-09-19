@@ -228,10 +228,6 @@ footer {
     font-size: 1.5em;
 }
 
-#hamburger-toggle:checked ~ .mobile-nav {
-    transform: translateX(0);
-}
-
 /* Desktop nav styles */
 .desktop-nav {
     display: flex;
@@ -266,8 +262,6 @@ footer {
 .home-logo {
     width: 50%;
     padding: 40px;
-    cursor: pointer;
-    transition: ease-in-out 0.2s;
 }
 
 .home-info {
