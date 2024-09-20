@@ -48,6 +48,13 @@ def contact(request):
             ['info@rkvideos-co.com']
         )
 
+        email_message = EmailMessage(
+            email_subject,
+            email_body,
+            settings.DEFAULT_FROM_EMAIL,
+            ['shaejk29@gmail.com']
+        )
+
         try:
             email_message.send()
             return render(request, 'contact.html',
