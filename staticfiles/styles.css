@@ -152,12 +152,11 @@ footer {
 
 /* Styles for hamburger menu button */
 .hamburger {
-    cursor: pointer;
-    display: none; /* Hidden by default, shown on mobile */
-    position: absolute;
-    right: 10px;
-    top: 10px;
+    position: fixed;
+    top: 30px;
+    right: -20px;
     z-index: 1001;
+    cursor: pointer;
 }
 
 .hamburger input {
@@ -196,11 +195,10 @@ footer {
 .mobile-nav {
     display: none;
     position: fixed;
-    left: -250px; /* Initially off-screen to the left */
+    left: -135%; /* Initially off-screen to the left */
     top: 0;
     width: 250px; /* Sidebar width */
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Dark background with transparency */
+    background: rgb(0, 0, 0); /* Dark background with transparency */
     z-index: 1000;
     transition: left 0.3s ease, opacity 0.3s ease; /* Animation for sliding in */
     opacity: 0; /* Start invisible */
@@ -208,7 +206,7 @@ footer {
 
 /* When active, slide the nav into view */
 .mobile-nav.active {
-    left: 0; /* Slide the sidebar fully onto the screen */
+    left: -35%; /* Slide the sidebar fully onto the screen */
     opacity: 1; /* Fade in */
 }
 
@@ -226,10 +224,6 @@ footer {
     color: #fff;
     text-decoration: none;
     font-size: 1.5em;
-}
-
-#hamburger-toggle:checked ~ .mobile-nav {
-    transform: translateX(0);
 }
 
 /* Desktop nav styles */
@@ -266,8 +260,6 @@ footer {
 .home-logo {
     width: 50%;
     padding: 40px;
-    cursor: pointer;
-    transition: ease-in-out 0.2s;
 }
 
 .home-info {
@@ -329,14 +321,7 @@ footer {
 }
 
 .featured-clients-section {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-}
-
-.featured-clients-section.in-view {
-    opacity: 1;
-    transform: translateY(0);
+    text-align: center;
 }
 
 .featured-clients-title {
@@ -798,11 +783,6 @@ footer {
     /* Show the hamburger menu on mobile */
     .hamburger {
         display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        z-index: 1001;
-        cursor: pointer;
     }
 
     .mobile-nav {

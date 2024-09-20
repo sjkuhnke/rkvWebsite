@@ -110,20 +110,12 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const container = document.getElementById('page-transition-container');
-            const hamburger = document.querySelector('.hamburger');
+            const hamburger = document.getElementById('hamburger-toggle');
             const mobileNav = document.querySelector('.mobile-nav');
 
             // Mobile nav toggle
-            hamburger.addEventListener('click', function(event) {
-                // Prevent any default behavior for the label or input interaction
-                event.preventDefault();
-
-                // Manually toggle the class
-                if (!mobileNav.classList.contains('active')) {
-                    mobileNav.classList.add('active');
-                } else {
-                    mobileNav.classList.remove('active');
-                }
+            hamburger.addEventListener('click', function() {
+                mobileNav.classList.toggle('active');
             });
 
             // Fade in and out transitions

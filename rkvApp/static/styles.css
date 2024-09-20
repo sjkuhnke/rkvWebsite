@@ -140,24 +140,20 @@ footer {
     transform-origin: bottom center;
 }
 
-/* Hide mobile nav and hamburger menu on desktop */
 .mobile-nav {
     display: none;
 }
 
-/* Display hamburger menu only on mobile */
 .hamburger {
     display: none;
 }
 
-/* Styles for hamburger menu button */
 .hamburger {
-    cursor: pointer;
-    display: none; /* Hidden by default, shown on mobile */
-    position: absolute;
-    right: 10px;
-    top: 10px;
+    position: fixed;
+    top: 30px;
+    right: -20px;
     z-index: 1001;
+    cursor: pointer;
 }
 
 .hamburger input {
@@ -196,20 +192,20 @@ footer {
 .mobile-nav {
     display: none;
     position: fixed;
-    left: -250px; /* Initially off-screen to the left */
+    left: -135%;
     top: 0;
-    width: 250px; /* Sidebar width */
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Dark background with transparency */
+    width: 250px;
+    background: rgb(0, 0, 0);
     z-index: 1000;
-    transition: left 0.3s ease, opacity 0.3s ease; /* Animation for sliding in */
-    opacity: 0; /* Start invisible */
+    transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0;
+    box-shadow: none;
 }
 
-/* When active, slide the nav into view */
 .mobile-nav.active {
-    left: 0; /* Slide the sidebar fully onto the screen */
-    opacity: 1; /* Fade in */
+    left: -35%;
+    opacity: 1;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.6);
 }
 
 .mobile-nav ul {
@@ -228,7 +224,6 @@ footer {
     font-size: 1.5em;
 }
 
-/* Desktop nav styles */
 .desktop-nav {
     display: flex;
     justify-content: center;
@@ -323,14 +318,7 @@ footer {
 }
 
 .featured-clients-section {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-}
-
-.featured-clients-section.in-view {
-    opacity: 1;
-    transform: translateY(0);
+    text-align: center;
 }
 
 .featured-clients-title {
@@ -346,8 +334,8 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
-    max-width: 1200px; /* Adjust max-width as needed */
-    margin: 0 auto; /* Centers the grid on the page */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .featured-clients-grid a {
@@ -380,10 +368,10 @@ footer {
 
 .about-image {
     position: relative;
-    width: 304px; /* Adjust the width as needed */
-    height: 342px; /* Adjust the height as needed */
+    width: 304px;
+    height: 342px;
     overflow: hidden;
-    border-radius: 80% / 80%; /* Creates a slight vertical oval shape */
+    border-radius: 80% / 80%;
     margin: 20px 0;
 }
 
@@ -394,7 +382,7 @@ footer {
 }
 
 .about-bio {
-    max-width: 600px; /* Adjust the width as needed */
+    max-width: 600px;
     padding: 20px;
     font-family: 'Leelawadee UI', sans-serif;
     font-size: 1.2em;
@@ -657,7 +645,6 @@ footer {
     transition: 0.2s ease all;
 }
 
-/* Apply styles when input is focused or has content */
 .form-group input:focus + label,
 .form-group textarea:focus + label,
 .form-group input:valid + label,
@@ -673,7 +660,6 @@ footer {
     font-size: 0.8em;
 }
 
-/* Specific rule for email input */
 .form-group input[type="email"].up + label,
 .form-group textarea.up + label {
     top: -20px;
@@ -703,23 +689,23 @@ footer {
 .success-message, .error-message {
     padding: 15px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.2); /* Slightly blurred background */
-    backdrop-filter: blur(1px); /* Adds the blur effect */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better contrast */
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
-    color: #fff; /* White text color for better readability */
+    color: #fff;
     max-width: 100%;
     display: inline-block;
 }
 
 .success-message {
-    background-color: rgba(0, 255, 0, 0.1); /* Light green tint */
-    border: 1px solid #00ff00; /* Green border */
+    background-color: rgba(0, 255, 0, 0.1);
+    border: 1px solid #00ff00;
 }
 
 .error-message {
-    background-color: rgba(255, 0, 0, 0.1); /* Light red tint */
-    border: 1px solid #ff0000; /* Red border */
+    background-color: rgba(255, 0, 0, 0.1);
+    border: 1px solid #ff0000;
 }
 
 /* Transition container to handle fade effect */
@@ -737,8 +723,8 @@ footer {
     text-align: center;
     padding: 50px;
     color: #fff;
-    background: rgba(0, 0, 0, 0.7); /* Slightly dark background */
-    backdrop-filter: blur(5px); /* Blurred background effect */
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
     border-radius: 15px;
     margin: 0 auto;
     max-width: 600px;
@@ -748,7 +734,6 @@ footer {
 .error-404-container h1 {
     font-size: 100px;
     margin: 0;
-    color: #ff0000; /* Red color for the 404 code */
 }
 
 .error-404-container h2 {
@@ -792,11 +777,6 @@ footer {
     /* Show the hamburger menu on mobile */
     .hamburger {
         display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        z-index: 1001;
-        cursor: pointer;
     }
 
     .mobile-nav {
