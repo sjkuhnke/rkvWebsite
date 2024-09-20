@@ -45,7 +45,7 @@ def contact(request):
             email_subject,
             email_body,
             settings.DEFAULT_FROM_EMAIL,
-            ['shaejk29@gmail.com']
+            ['info@rkvideos-co.com']
         )
 
         try:
