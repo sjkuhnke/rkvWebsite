@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6df211d6-286a-4c24-959d-e1695cb7075d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rkvApp/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/static/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rkvApp/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rkvProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/rkvProject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +168,8 @@
       <workItem from="1725383588593" duration="3253000" />
       <workItem from="1726616254113" duration="8899000" />
       <workItem from="1726758337315" duration="8242000" />
-      <workItem from="1726849972939" duration="4478000" />
+      <workItem from="1726849972939" duration="4912000" />
+      <workItem from="1726869516472" duration="351000" />
     </task>
     <servers />
   </component>
