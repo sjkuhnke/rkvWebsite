@@ -41,14 +41,14 @@ def contact(request):
             'message': message,
         })
 
-        email_message = EmailMessage(
+        email_message1 = EmailMessage(
             email_subject,
             email_body,
             settings.DEFAULT_FROM_EMAIL,
             ['info@rkvideos-co.com']
         )
 
-        email_message = EmailMessage(
+        email_message2 = EmailMessage(
             email_subject,
             email_body,
             settings.DEFAULT_FROM_EMAIL,
@@ -56,7 +56,8 @@ def contact(request):
         )
 
         try:
-            email_message.send()
+            email_message1.send()
+            email_message2.send()
             return render(request, 'contact.html',
                           {'success': 'Thank you for your message. We will get back to you shortly.'})
         except Exception as e:
