@@ -34,6 +34,7 @@
 {% endblock %}
 
 {% block content %}
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <div class="contact-container">
     <h2>Let's Talk!</h2>
     <p>Riley Killian<br>RK Videos, LLC<br>Video Production Company<br>920-475-6641<br>info@rkvideos-co.com<line border><br>Appleton, Wisconsin<br>Milwaukee, Wisconsin<br>Chicago, Illinois</p>
@@ -67,6 +68,8 @@
             <textarea id="message" name="message" required></textarea>
             <label for="message">Message</label>
         </div>
+
+        <div class="g-recaptcha" data-sitekey="{{ recaptcha_site_key }}"></div>
 
         <div class="submit-container">
             <button type="submit">Submit</button>
