@@ -61,7 +61,6 @@
                 <li class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}"><a href="{% url 'about' %}">About</a></li>
                 <li class="{% if request.resolver_match.url_name == 'documentary' %}active{% endif %}"><a href="{% url 'documentary' %}">Documentary</a></li>
                 <li class="{% if request.resolver_match.url_name == 'show' %}active{% endif %}"><a href="{% url 'show' %}">Showreels</a></li>
-                <li class="{% if request.resolver_match.url_name == 'projects' %}active{% endif %}"><a href="{% url 'projects' %}">Upcoming Projects</a></li>
                 <li class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}"><a href="{% url 'contact' %}">Contact</a></li>
             </ul>
         </nav>
@@ -73,7 +72,6 @@
                 <li class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}"><a href="{% url 'about' %}">About</a></li>
                 <li class="{% if request.resolver_match.url_name == 'documentary' %}active{% endif %}"><a href="{% url 'documentary' %}">Documentary</a></li>
                 <li class="{% if request.resolver_match.url_name == 'show' %}active{% endif %}"><a href="{% url 'show' %}">Showreels</a></li>
-                <li class="{% if request.resolver_match.url_name == 'projects' %}active{% endif %}"><a href="{% url 'projects' %}">Upcoming Projects</a></li>
                 <li class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}"><a href="{% url 'contact' %}">Contact</a></li>
             </ul>
         </nav>
@@ -101,7 +99,7 @@
         </ul>
         <div class="footer-text-container">
             <p class="footer-text"><i>
-                &copy; 2024 by RK Videos, LLC
+                &copy; {% now "Y" %} by RK Videos, LLC
             </i>
             </p>
         </div>
