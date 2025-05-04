@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6df211d6-286a-4c24-959d-e1695cb7075d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rkvApp/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rkvApp/templates/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/templates/show.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +190,10 @@
       <workItem from="1743693843256" duration="1317000" />
       <workItem from="1744126398977" duration="1641000" />
       <workItem from="1744251227086" duration="14000" />
-      <workItem from="1745941536043" duration="101000" />
+      <workItem from="1745941536043" duration="747000" />
+      <workItem from="1746109731779" duration="598000" />
+      <workItem from="1746212143747" duration="3000" />
+      <workItem from="1746325589158" duration="554000" />
     </task>
     <servers />
   </component>
