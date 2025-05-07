@@ -19,11 +19,14 @@ This site acts as both a digital portfolio and client portal for RK Videos Co., 
 - **About Page**
   - Professional background and company mission
 
-- **About Page**
-  - Professional background and company mission
+- **Contact Form**
+  - Google reCAPTCHA v2 integration
+  - Real-time client-side and server-side validation
+  - Emails sent securely via Amazon SES
  
-- **About Page**
-  - Professional background and company mission
+- **Deployment & Hosting**
+  - Live on Heroku with Gunicorn and Whitenoise
+  - Configured via `.env` for security and portability
 
 ## ⚙️ Tech Stack
 
