@@ -59,6 +59,7 @@ def contact(request):
         email_body = render_to_string('contact_email.txt', {
             'name': name,
             'email': email,
+            'subject': subject,
             'message': message,
         })
 

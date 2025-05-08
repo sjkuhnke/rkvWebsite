@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6df211d6-286a-4c24-959d-e1695cb7075d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rkvApp/templates/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/templates/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rkvApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +193,9 @@
       <workItem from="1745941536043" duration="747000" />
       <workItem from="1746109731779" duration="598000" />
       <workItem from="1746212143747" duration="3000" />
-      <workItem from="1746325589158" duration="554000" />
+      <workItem from="1746325589158" duration="1245000" />
+      <workItem from="1746639571629" duration="41000" />
+      <workItem from="1746640664160" duration="61000" />
     </task>
     <servers />
   </component>
