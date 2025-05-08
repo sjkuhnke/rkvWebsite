@@ -24,12 +24,12 @@ DEBUG = False
 ALLOWED_HOSTS = ['rkvideos-website-baa6964d2c43.herokuapp.com', 'localhost', 'rkvideos-co.com', 'www.rkvideos-co.com']
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = 'email-smtp.us-east-2.amazonaws.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
-DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+DEFAULT_FROM_EMAIL = 'noreply@rkvideos-co.com'
 
 GOOGLE_RECAPTCHA_SITE_KEY = "6LfYz24qAAAAAIQu8zIbNcRXI346IFLVmJi3fMvy"
 GOOGLE_RECAPTCHA_SECRET_KEY = "6LfYz24qAAAAADJlgx4OiNhbmquHrI5PB9Qo7bKM"
