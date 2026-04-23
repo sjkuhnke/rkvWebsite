@@ -518,6 +518,13 @@ footer {
     border-radius: 10px;
 }
 
+.video-section video {
+    width: 100%;
+    max-width: 640px;
+    height: 360px;
+    border-radius: 10px;
+}
+
 /* Upcoming Projects */
 .projects-container {
     text-align: center;

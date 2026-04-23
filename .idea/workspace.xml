@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6df211d6-286a-4c24-959d-e1695cb7075d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rkvApp/templates/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/templates/show.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rkvProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/rkvProject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +64,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sjkuhnke\PycharmProjects\rkvWebsite\rkvApp\static\videos" />
       <recent name="C:\Users\shaej\PycharmProjects\rkvProject\rkvApp\static\images" />
       <recent name="C:\Users\shaej\PycharmProjects\rkvWebsite\rkvApp\static\videos" />
       <recent name="C:\Users\shaej\PycharmProjects\rkvWebsite\rkvApp\static\images" />
@@ -196,7 +199,9 @@
       <workItem from="1746325589158" duration="1245000" />
       <workItem from="1746639571629" duration="41000" />
       <workItem from="1746640664160" duration="61000" />
-      <workItem from="1746719985728" duration="2466000" />
+      <workItem from="1746719985728" duration="4473000" />
+      <workItem from="1759773332317" duration="17000" />
+      <workItem from="1776910006976" duration="626000" />
     </task>
     <servers />
   </component>
