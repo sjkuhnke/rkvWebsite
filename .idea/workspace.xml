@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6df211d6-286a-4c24-959d-e1695cb7075d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rkvApp/templates/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/rkvApp/templates/show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rkvProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/rkvProject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +199,7 @@
       <workItem from="1746640664160" duration="61000" />
       <workItem from="1746719985728" duration="4473000" />
       <workItem from="1759773332317" duration="17000" />
-      <workItem from="1776910006976" duration="626000" />
+      <workItem from="1776910006976" duration="1151000" />
     </task>
     <servers />
   </component>
